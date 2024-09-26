@@ -1,0 +1,666 @@
+*{
+    transition: all 0.5s ease !important;
+}
+
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 2px solid #F2F0F1;
+}
+.alert{
+    height: 38px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+
+}
+.alert button{
+    height: 100%;
+    color: white !important;
+    margin-right: 7%;
+}
+
+#navbar{
+    width: 100%;
+    max-width: 1240px;
+    height: 48px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#navbar h3{
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+}
+#navbar #menu.navbar-collapse{
+    height: 22px;
+    flex-grow: 0;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    background: white !important;
+}
+.navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+form#search-form{
+/*    min-width: 40%;*/
+    max-width: 577px;
+    height: 100%;
+    position: relative;
+}
+#search-form button{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#search-form button i{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #00000066;
+
+}
+#search-form input{
+    max-width: 100%;
+    padding: 12px 16px 12px 16px;
+    border-radius: 62px;
+    background: #F0F0F0;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+}
+#control i{
+    font-size: 24px;
+}
+
+
+main{
+    margin-top: 134px;
+}
+
+#intro{
+    background: #F2F0F1;
+    height: auto;
+}
+
+#intro h1.row{
+    font-family: Integral CF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    color: #000000;
+}
+
+#intro p.row{
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #00000099;
+}
+
+#intro button{
+    width: 100%;
+    max-width: 991px;
+    height: 52px;
+    padding: 16px 54px 16px 54px;
+    gap: 12px;
+    border-radius: 62px;
+    background: #000000;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#intro #info{
+    flex-wrap: wrap;
+}
+#intro #info h3{
+    font-family: Satoshi;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #000000;
+/*    height: 54px;*/
+}
+#intro #info p{
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    height: 22px;
+    color: #00000099;
+    white-space: nowrap;
+}
+
+#intro span.line {
+    width: 1px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#intro img{
+    width: 100%;
+
+}
+
+.topic h4{
+    font-family: Integral CF;
+font-size: 48px;
+font-weight: 700;
+line-height: 57.6px;
+
+}
+.topic ul.list-products{
+    flex-wrap: wrap;
+}
+
+.topic li.product-item{
+    width: 50%;
+    max-width: 295px;
+    list-style: none;
+     flex-wrap: wrap;
+}
+.topic .product-item img{
+    width: 100%;
+    min-height: 298px;
+    border-radius: 20px;
+    opacity: 0px;
+}
+
+.topic .product-item >p{
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.topic .stars{
+    margin-right: 8px;
+}
+.topic .stars i{
+    color: #FFC633;
+    width: 18.49px;
+    height: 18.49px;
+}
+.topic .review p{
+    font-family: Satoshi;
+font-size: 14px;
+font-weight: 400;
+line-height: 18.9px;
+margin-bottom: 0;
+
+}
+.topic .price p{
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    margin-right: 8px;
+}
+.topic .price p:nth-child(2){
+    color: #00000066;
+}
+.topic .price p:last-child{
+    padding: 6px 14px;
+    border-radius: 62px;
+    background: #FF33331A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.2px;
+    color: #FF3333;
+}
+.topic .price p:last-child:empty {
+  display: none;
+}
+
+.topic button{
+    max-width: 218px;
+    height: 52px;
+    padding: 16px 54px;
+    border-radius: 62px;
+    border: 1px solid #0000001A;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    background: none;
+}
+
+#styles{
+    border-radius: 40px;
+    background: #F0F0F0;
+}
+
+#styles h4{
+    font-family: Integral CF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+ 
+#styles .style-item{
+    position: relative;
+    height: 289px;
+}
+#styles .style-item p{
+    position: absolute;
+    top: 25px;
+    left: 36px;
+    font-family: Satoshi;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48.6px;
+
+}
+#styles img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+#customers{
+    margin: 80px auto !important;
+}
+
+#customers h4{
+    font-family: Integral CF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+
+}
+#customers .control i{
+    font-size: 24px;
+}
+#customers .customer-item{
+    width: 100%;
+    max-width: 400px;
+    min-height: 240px;
+    padding: 28px 32px;
+    border-radius: 20px;
+    border: 1px solid #0000001A;
+
+}
+#customers .customer-item:first-child, #customers .customer-item:last-child{
+    display: none;
+}
+
+#customers .stars i{
+    color: #FFC633;
+    font-size: 24px;
+}
+
+#customers .name p{
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+#customers .name i{
+    color: #01AB31;
+    font-size: 20px;
+}
+#customers .feedback p{
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #00000099;
+}
+
+footer{
+    background: #F2F0F1;
+    position: relative;
+    margin-top: 200px !important;
+}
+#offer-update, #more-info, footer hr, #end{
+    transform: translateY(-100px);
+}
+
+#offer-update{
+    padding: 36px 64px;
+    border-radius: 20px;
+}
+#offer-update h4{
+    font-family: Integral CF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+}
+#offer-update form >*{
+    width: 100%;
+    max-width: 349px;
+height: 48px;
+padding: 12px 16px;
+border-radius: 62px;
+}
+#offer-update form .input-group{
+    position: relative;
+}
+#offer-update form .input-group i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    margin: 9px 12px;
+    color: #00000066;
+}
+#offer-update form .input-group input{
+    width: 100%;
+    padding-left: 24px !important;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #00000066;
+    outline: none;
+    border: none;
+}
+#offer-update form button{
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+
+#more-info #contact h3{
+    font-family: Integral CF;
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 40.15px;
+}
+#more-info #contact p{
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #00000099;
+}
+#more-info #social a{
+    padding: 0 5px !important;
+    border: 1px solid #00000033;
+    border-radius: 28px;
+    background: white;
+    color: black;
+}
+#more-info #social a:nth-child(2){
+    color: white;
+    background: black;
+}
+
+#more-info #social a i{
+    font-size: 12px;
+}
+#more-info #social a i::before{
+    vertical-align: 0 !important;
+
+}
+
+#more-info .col-auto h4{
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+
+}
+#more-info .col-auto p{
+    font-family: Satoshi;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+color: #00000099;
+
+}
+footer hr.row{
+    border: 1px solid #0000001A;
+}
+
+#end #copyright{
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: #00000099;
+}
+#end #payment-methods{
+    width: 100%;
+    max-width: 282px;
+}
+#end #payment-methods .pay-item{
+    width: 46.61px;
+    height: 30.03px;
+    padding: 9.86px 9.09px 8.96px 8.96px;
+    border-radius: 5.38px;
+    border: 0.22px solid #D6DCE5;
+    background: #FFFFFF;
+    box-shadow: 0px 0.45px 4.48px 0px #B7B7B714;
+    box-shadow: 0px 4.48px 8.96px 0px #B7B7B714;
+}
+#end #payment-methods img{
+    transform: scale(1);
+    transform-origin: center; 
+}
+
+/*------------------------------------------*/
+@media (max-width: 991px) {
+    #navbar.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button.navbar-toggler {
+        position: relative;
+    }
+
+    #menu.navbar-collapse {
+        width: 100%;
+        height: auto !important;
+        z-index: 1000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-bottom: 2px solid #F2F0F1;
+    }
+
+    ul.navbar-nav {
+        margin: 0;
+        padding: 16px;
+    }
+
+    li.nav-item{
+        padding: 16px;
+    }
+}
+
+@media (min-width: 992px){
+    header #navbar, main #intro, main #brands, footer{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+    main .topic, main #styles, main #customers{
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+    #intro button{
+        max-width: 210px;
+    }
+}
+@media (max-width: 991px){
+    header #navbar, main #intro, main #brands, footer{
+        padding-left: 64px !important;
+        padding-right: 64px !important;
+    }
+    main .topic, main #styles, main #customers{
+        margin-left: 64px !important;
+        margin-right: 64px !important;
+    }
+}
+@media (max-width: 767px){
+    header #navbar, main #intro, main #brands, footer{
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+    }
+    main .topic, main #styles, main #customers{
+        margin-left: 48px !important;
+        margin-right: 48px !important;
+    }
+}
+
+@media (max-width: 575px){
+    header #navbar, main #intro, main #brands, footer{
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    main .topic, main #styles, main #customers{
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+}
+
+
+img{
+    object-fit: cover;
+}
+
+
+
+
+/*--------------------------------font-----------------------------------*/
+@media (max-width: 767px) {
+    header #navbar h3{
+        font-size: 25.2px;
+        line-height: 30.24px;
+    }
+    #intro h1.row{
+        font-size: 36px;
+        line-height: 34px;
+    }
+    main #intro #info h3{
+        font-size: 24px;
+        line-height: 32.4px;
+    }
+    #brands img{
+        transform: scale(0.6);
+    }
+    .topic h4{
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    .topic .product-item >p{
+        font-size: 16px;
+        line-height: 21.6px;
+    }
+    .topic .product-item .price p{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .topic .product-item .price p:last-child{
+        padding: 6px 14px;
+        border-radius: 62px;
+        font-size: 10px;
+        line-height: 13.5px;
+    }
+    #styles{
+        padding: 28px 24px !important;
+    }
+    #styles h4{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    #styles .style-item{
+        padding: 0px;
+        height: 190px;
+    }
+    #styles .style-item p {
+        font-size: 24px;
+        line-height: 32.4px;
+    }
+    #customers h4{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    #customers .customer-item{
+    padding: 24px;
+    width: 100%;
+    }
+    #offer-update{
+        margin: 0 16px;
+        padding: 12px 8px;
+    }
+    #offer-update form >*{
+        max-width: 100%;
+    }
+    #offer-update h4{
+        font-size: 32px;
+        line-height: 35px;
+    }
+    #more-info #contact h3{
+        font-size: 28.85px;
+        line-height: 34.62px;
+    }
+}
+
+/*--------------------------------------effect--------------------------------------*/
+button:hover {
+    background-color: #FF3333;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main #intro, .topic, #styles, #customers {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+#styles .style-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+#styles .style-item:hover p {
+    color: #FF3333;
+    transition: color 0.3s ease;
+}
+
+i:hover{
+    color: #FF3333;
+}

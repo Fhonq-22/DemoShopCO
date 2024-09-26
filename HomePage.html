@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop.co | HomePage</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/HomePage.css">
+</head>
+<body>
+	<header class="container-fluid p-0 position-fixed bg-white">
+		<div class="alert bg-black text-white alert-dismissible text-center p-0 mb-0 d-flex justify-content-center align-items-center" role="alert">
+			Sign up and get 20% off to your first order. <a href="#" class="text-white">Sign Up Now</a>
+			<button class="btn-close btn-close-white d-none d-md-block p-0" aria-label="close" data-bs-dismiss="alert"></button>
+		</div>
+
+		<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center p-0 m-4 bg-white d-flex" id="navbar">
+			<a class="navbar-brand order-lg-1 order-2 m-0"><h3 class="mb-0">SHOP.CO</h3></a>
+			<button class="navbar-toggler bg-white order-1" data-bs-toggle="collapse" data-bs-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse bg-white order-lg-2 order-3" id="menu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown" data-bs-toggle="dropdown" data-bs-target="#sub-menu">
+						Shop
+						<i class="bi bi-chevron-down"></i>
+						<ul class="dropdown-menu" id="sub-menu">
+							<li><a class="dropdown-item" href="#">Shop 1</a></li>
+							<li><a class="dropdown-item" href="#">Shop 2</a></li>
+							<li><a class="dropdown-item" href="#">Shop 3</a></li>
+							<li><a class="dropdown-item" href="#">Shop 4</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black" href="#">On Sale</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black" href="#">New Arrivals</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black" href="#brands">Brands</a>
+					</li>
+				</ul>
+			</div>
+			
+			<form class="d-flex order-lg-3 order-2" id="search-form">
+				<button class="btn d-none d-lg-block" type="submit">
+					<i class="bi bi-search"></i>
+				</button>
+				<input class="form-control d-none d-lg-block ps-5" type="search" placeholder="Search for products..." aria-label="Search">
+			</form>
+			<div class="d-flex order-lg-4 order-3" id="control">
+				<div class="nav-item d-lg-none d-block me-2">
+					<a class="nav-link text-black" href="#">
+						<i class="bi bi-search"></i>
+					</a>
+				</div>
+				<div class="nav-item me-2">
+					<a class="nav-link text-black" href="#">
+						<i class="bi bi-cart"></i>
+					</a>
+				</div>
+				<div class="nav-item ms-0">
+					<a class="nav-link text-black" href="#">
+						<i class="bi bi-person-circle"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container-fluid">
+		<div class="row d-flex align-items-center pb-0" id="intro">
+			<div class="col-lg-7 p-3">
+				<h1 class="row mb-4">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+				<p class="row mb-4">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+				<button class="row btn mb-5">Shop Now</button>
+
+				<div class="row text-left d-flex align-items-center" id="info">
+					<div class="col">
+						<h3>200+</h3>
+						<p>International Brands</p>
+					</div>
+					<span class="line d-none d-md-inline-block p-0"></span>
+					<div class="col">
+						<h3>2,000+</h3>
+						<p>High-Quality Products</p>
+					</div>
+					<span class="line d-none d-md-inline-block p-0"></span>
+					<div class="col">
+						<h3>30,000+</h3>
+						<p>Happy Customers</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 p-0">
+				<img src="img/trendy-fashionable-couple-posing.png" class="img-fluid" alt="Fashionable couple">
+			</div>
+		</div>
+		<div class="row gy-2 gy-lg-4 bg-black d-flex justify-content-center pd-2 p-lg-3 pt-5 pb-5 mt-0" id="brands">
+			<div class="col-auto p-0">
+				<img src="img/brands/versace.svg" width="167px">
+			</div>
+			<div class="col-auto p-0">
+				<img src="img/brands/zara.svg" width="92px">
+			</div>
+			<div class="col-auto p-0">
+				<img src="img/brands/gucci.svg" width="157px">
+			</div>
+			<div class="col-auto p-0">
+				<img src="img/brands/prada.svg" width="195px">
+			</div>
+			<div class="col-auto p-0">
+				<img src="img/brands/calvin-klein.svg" width="208px">
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center topic">
+			<h4 class="col-12 text-center p-5">NEW ARRIVALS</h4>
+			<div class="col-12">
+				<ul class="row d-flex justify-content-between p-0 list-products">
+					<li class="col product-item">
+						<img src="img/products/product-01.png">
+						<p>T-shirt with tape details</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-half"></i>
+							</div>
+							<p>4.5/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$120</p>
+							<p></p>
+							<p></p>
+						</div>
+					</li>
+					<li class="col product-item">
+						<img src="img/products/product-02.png">
+						<p>Skinny fit jeans</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-half"></i>
+							</div>
+							<p>3.5/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$240</p>
+							<p>$260</p>
+							<p>-20%</p>
+						</div>
+					</li>
+					<li class="col d-none d-md-block product-item">
+						<img src="img/products/product-03.png">
+						<p>Checkered shirt</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-half"></i>
+							</div>
+							<p>4.5/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$180</p>
+							<p></p>
+							<p></p>
+						</div>
+					</li>
+					<li class="col d-none d-md-block product-item">
+						<img src="img/products/product-04.png">
+						<p>Sleeve striped t-shirt</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-half"></i>
+							</div>
+							<p>4.5/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$130</p>
+							<p>$160</p>
+							<p>-30%</p>
+						</div>
+					</li>
+				</ul>	
+			</div>
+			<button class="col-12 text-center m-4">View All</button>
+			<hr class="col-12 m-4">
+		</div>
+		<div class="row d-flex justify-content-center topic">
+			<h4 class="col-12 text-center p-5">TOP SELLING</h4>
+			<div class="col-12">
+				<ul class="row d-flex justify-content-between p-0 list-products">
+					<li class="col product-item">
+						<img src="img/products/product-05.png">
+						<p>Vertical striped shirt</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+							</div>
+							<p>5.0/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$212</p>
+							<p>$232</p>
+							<p>-20%</p>	
+						</div>
+					</li>
+					<li class="col product-item">
+						<img src="img/products/product-06.png">
+						<p>Courage graphic t-shirt</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+							</div>
+							<p>4.0/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$145</p>
+							<p></p>
+							<p></p>	
+						</div>
+					</li>
+					<li class="col d-none d-md-block product-item">
+						<img src="img/products/product-07.png">
+						<p>Loose fit bermuda shorts</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+							</div>
+							<p>3.0/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$80</p>
+							<p></p>
+							<p></p>
+						</div>
+					</li>
+					<li class="col d-none d-md-block product-item">
+						<img src="img/products/product-08.png">
+						<p>Faded skinny jeans</p>
+						<div class="d-flex align-items-center review">
+							<div class="stars">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-half"></i>
+							</div>
+							<p>4.5/5</p>
+						</div>
+						<div class="d-flex price">
+							<p>$210</p>
+							<p></p>
+							<p></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="col-12 text-center m-4">View All</button>
+		</div>
+		<div class="row d-flex justify-content-center g-4 p-4 pt-0 mt-4 mb-4" id="styles">
+			<div class="col-12 text-center">
+				<h4>BROWSE BY DRESS STYLE</h4>
+			</div>
+			<div class="col-lg-4 style-item">
+				<p>Casual</p>
+				<img src="img/styles/style-01.png">
+			</div>
+			<div class="col-lg-7 style-item">
+				<p>Formal</p>
+				<img src="img/styles/style-02.png">
+			</div>
+			<div class="col-lg-7 style-item">
+				<p>Party</p>
+				<img src="img/styles/style-03.png">
+			</div>
+			<div class="col-lg-4 style-item">
+				<p>Gym</p>
+				<img src="img/styles/style-04.png">
+			</div>
+		</div>
+		<div class="row gy-3 mt-4 mb-4" id="customers">
+			<div class="col-12 d-flex">
+				<h4>OUR HAPPY CUSTOMERS</h4>
+				<div class="control d-flex ms-auto">
+					<i class="bi bi-arrow-left-short"></i>
+					<i class="bi bi-arrow-right-short"></i>
+				</div>
+			</div>
+			<div class="col-12" id="customer-list">
+				<div class="row gy-2 d-flex justify-content-around">
+					<div class="col-lg customer-item">
+						<div class="stars">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="name d-flex align-items-center">
+							<p>Sarah M.</p>
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+						<div class="feedback">
+							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+						</div>
+					</div>
+					<div class="col-lg customer-item">
+						<div class="stars">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="name d-flex align-items-center">
+							<p>Sarah M.</p>
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+						<div class="feedback">
+							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+						</div>
+					</div>
+					<div class="col-lg d-none d-md-block customer-item">
+						<div class="stars">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="name d-flex align-items-center">
+							<p>Alex K.</p>
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+						<div class="feedback">
+							<p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+						</div>
+					</div>
+					<div class="col-lg d-none d-md-block customer-item">
+						<div class="stars">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="name d-flex align-items-center">
+							<p>James L.</p>
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+						<div class="feedback">
+							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+						</div>
+					</div>
+					<div class="col-lg customer-item">
+						<div class="stars">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="name d-flex align-items-center">
+							<p>Mooen</p>
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+						<div class="feedback">
+							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid">
+		<div class="row d-flex justify-content-between align-items-center bg-black" id="offer-update">
+			<h4 class="col-md-6 text-white">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+			<form class="col-md-4 ms-auto">
+				<div class="input-group bg-white m-2 ms-0">
+					<i class="bi bi-envelope"></i>
+					<input type="email" name="email" placeholder="Enter your email address">
+				</div>
+				<button class="btn bg-white m-2 ms-0">Subscribe to Newsletter</button>
+			</form>
+		</div>
+		<div class="row gy-3 justify-content-between mt-3" id="more-info">
+			<div class="col-lg-3 col-md-12" id="contact">
+				<h3>SHOP.CO</h3>
+				<p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+				<div id="social">
+					<a href="#"><i class="bi bi-twitter"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-github"></i></a>
+				</div>
+			</div>
+			<div class="col-auto" id="company">
+				<h4>COMPANY</h4>
+				<p>About</p>
+				<p>Features</p>
+				<p>Works</p>
+				<p>Career</p>
+			</div>
+			<div class="col-auto" id="help">
+				<h4>HELP</h4>
+				<p>Customer Support</p>
+				<p>Delivery Details</p>
+				<p>Terms & Conditions</p>
+				<p>Privacy Policy</p>
+			</div>
+			<div class="col-auto" id="faq">
+				<h4>FAQ</h4>
+				<p>Account</p>
+				<p>Manage Deliveries</p>
+				<p>Orders</p>
+				<p>Payments</p>
+			</div>
+			<div class="col-auto" id="resources">
+				<h4>RESOURCES</h4>
+				<p>Free eBooks</p>
+				<p>Development Tutorial</p>
+				<p>How to - Blog</p>
+				<p>Youtube Playlist</p>
+			</div>
+		</div>
+		<hr class="row mt-4 mb-3">
+		<div class="row d-flex justify-content-center" id="end">
+			<div class="col-auto m-2" id="copyright">Shop.co &copy; 2000–2023, All Rights Reserved</div>
+			<div class="col-auto d-flex justify-content-between ms-lg-auto ms-0 m-2" id="payment-methods">
+				<div class="d-flex justify-content-center align-items-center pay-item">
+					<img src="img/payments/Visa.png">	
+				</div>
+				<div class="d-flex justify-content-center align-items-center pay-item">
+					<img src="img/payments/Mastercard.png">
+				</div>
+				<div class="d-flex justify-content-center align-items-center pay-item">
+					<img src="img/payments/Paypal.png">
+				</div>
+				<div class="d-flex justify-content-center align-items-center pay-item">
+					<img src="img/payments/Applepay.png">
+				</div>
+				<div class="d-flex justify-content-center align-items-center pay-item">
+					<img src="img/payments/Gpay.png">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
