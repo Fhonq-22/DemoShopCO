@@ -2,7 +2,6 @@
     transition: all 0.5s ease !important;
 }
 
-
 header{
     top: 0;
     left: 0;
@@ -12,11 +11,9 @@ header{
 }
 .alert{
     height: 38px;
-    font-family: Satoshi;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.9px;
-
 }
 .alert button{
     height: 100%;
@@ -32,7 +29,6 @@ header{
     margin-right: auto !important;
 }
 #navbar h3{
-    font-family: Integral CF;
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -41,7 +37,6 @@ header{
 #navbar #menu.navbar-collapse{
     height: 22px;
     flex-grow: 0;
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.6px;
@@ -77,7 +72,6 @@ form#search-form{
     padding: 12px 16px 12px 16px;
     border-radius: 62px;
     background: #F0F0F0;
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.6px;
@@ -86,7 +80,6 @@ form#search-form{
 #control i{
     font-size: 24px;
 }
-
 
 main{
     margin-top: 134px;
@@ -98,7 +91,6 @@ main{
 }
 
 #intro h1.row{
-    font-family: Integral CF;
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
@@ -107,7 +99,6 @@ main{
 }
 
 #intro p.row{
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -123,7 +114,6 @@ main{
     gap: 12px;
     border-radius: 62px;
     background: #000000;
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.6px;
@@ -136,7 +126,6 @@ main{
     flex-wrap: wrap;
 }
 #intro #info h3{
-    font-family: Satoshi;
     font-size: 40px;
     font-weight: 700;
     line-height: 54px;
@@ -144,7 +133,6 @@ main{
 /*    height: 54px;*/
 }
 #intro #info p{
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -163,66 +151,77 @@ main{
 
 #intro img{
     width: 100%;
-
 }
 
-.topic h4{
-    font-family: Integral CF;
-font-size: 48px;
-font-weight: 700;
-line-height: 57.6px;
-
-}
-.topic ul.list-products{
-    flex-wrap: wrap;
+.topic h4 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
 }
 
-.topic li.product-item{
-    width: 50%;
-    max-width: 295px;
+.topic ul.list-products {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0;
     list-style: none;
-     flex-wrap: wrap;
 }
-.topic .product-item img{
+
+.topic ul.list-products::-webkit-scrollbar {
+    display: none;
+}
+
+.topic li.product-item {
+    flex: 0 0 auto;
+    /* width: 50%; */
+    width: 295px;
+    list-style: none;
+}
+
+.topic .product-item img {
     width: 100%;
     min-height: 298px;
     border-radius: 20px;
     opacity: 0px;
 }
 
-.topic .product-item >p{
-    font-family: Satoshi;
+.topic .product-item > p {
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
 }
-.topic .stars{
+
+.topic .stars {
     margin-right: 8px;
 }
-.topic .stars i{
+
+.topic .stars i {
     color: #FFC633;
     width: 18.49px;
     height: 18.49px;
 }
-.topic .review p{
-    font-family: Satoshi;
-font-size: 14px;
-font-weight: 400;
-line-height: 18.9px;
-margin-bottom: 0;
 
+.topic .review p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    margin-bottom: 0;
 }
-.topic .price p{
-    font-family: Satoshi;
+
+.topic .price p {
     font-size: 24px;
     font-weight: 700;
     line-height: 32.4px;
     margin-right: 8px;
 }
-.topic .price p:nth-child(2){
+
+.topic .price p:nth-child(2) {
     color: #00000066;
 }
-.topic .price p:last-child{
+
+.topic .price p:last-child {
     padding: 6px 14px;
     border-radius: 62px;
     background: #FF33331A;
@@ -231,17 +230,17 @@ margin-bottom: 0;
     line-height: 16.2px;
     color: #FF3333;
 }
+
 .topic .price p:last-child:empty {
-  display: none;
+    display: none;
 }
 
-.topic button{
+.topic button {
     max-width: 218px;
     height: 52px;
     padding: 16px 54px;
     border-radius: 62px;
     border: 1px solid #0000001A;
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.6px;
@@ -255,7 +254,6 @@ margin-bottom: 0;
 }
 
 #styles h4{
-    font-family: Integral CF;
     font-size: 48px;
     font-weight: 700;
     line-height: 57.6px;
@@ -269,11 +267,9 @@ margin-bottom: 0;
     position: absolute;
     top: 25px;
     left: 36px;
-    font-family: Satoshi;
     font-size: 36px;
     font-weight: 700;
     line-height: 48.6px;
-
 }
 #styles img{
     width: 100%;
@@ -281,53 +277,49 @@ margin-bottom: 0;
     border-radius: 20px;
 }
 
-
-#customers{
+#customers {
     margin: 80px auto !important;
 }
 
-#customers h4{
-    font-family: Integral CF;
+#customers h4 {
     font-size: 48px;
     font-weight: 700;
     line-height: 57.6px;
+}
 
-}
-#customers .control i{
+#customers .control i {
     font-size: 24px;
+    cursor: pointer;
 }
-#customers .customer-item{
+
+#customers .customer-item {
     width: 100%;
     max-width: 400px;
     min-height: 240px;
     padding: 28px 32px;
     border-radius: 20px;
     border: 1px solid #0000001A;
-
-}
-#customers .customer-item:first-child, #customers .customer-item:last-child{
-    display: none;
 }
 
-#customers .stars i{
+#customers .stars i {
     color: #FFC633;
     font-size: 24px;
 }
 
-#customers .name p{
-    font-family: Satoshi;
+#customers .name p {
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
     margin-bottom: 0;
     margin-right: 8px;
 }
-#customers .name i{
+
+#customers .name i {
     color: #01AB31;
     font-size: 20px;
 }
-#customers .feedback p{
-    font-family: Satoshi;
+
+#customers .feedback p {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -348,7 +340,6 @@ footer{
     border-radius: 20px;
 }
 #offer-update h4{
-    font-family: Integral CF;
     font-size: 40px;
     font-weight: 700;
     line-height: 45px;
@@ -356,9 +347,9 @@ footer{
 #offer-update form >*{
     width: 100%;
     max-width: 349px;
-height: 48px;
-padding: 12px 16px;
-border-radius: 62px;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 62px;
 }
 #offer-update form .input-group{
     position: relative;
@@ -374,7 +365,6 @@ border-radius: 62px;
 #offer-update form .input-group input{
     width: 100%;
     padding-left: 24px !important;
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.6px;
@@ -383,20 +373,17 @@ border-radius: 62px;
     border: none;
 }
 #offer-update form button{
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.6px;
 }
 
 #more-info #contact h3{
-    font-family: Integral CF;
     font-size: 33.45px;
     font-weight: 700;
     line-height: 40.15px;
 }
 #more-info #contact p{
-    font-family: Satoshi;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -419,31 +406,25 @@ border-radius: 62px;
 }
 #more-info #social a i::before{
     vertical-align: 0 !important;
-
 }
 
 #more-info .col-auto h4{
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 3px;
-
 }
 #more-info .col-auto p{
-    font-family: Satoshi;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-color: #00000099;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #00000099;
 }
 footer hr.row{
     border: 1px solid #0000001A;
 }
 
 #end #copyright{
-    font-family: Satoshi;
     font-size: 14px;
     font-weight: 400;
     line-height: 18.9px;
@@ -545,15 +526,24 @@ footer hr.row{
     }
 }
 
-
 img{
     object-fit: cover;
 }
 
-
-
-
 /*--------------------------------font-----------------------------------*/
+.alert, #navbar #menu.navbar-collapse, #search-form input, #intro p.row,
+#intro button, #intro #info h3, #intro #info p, .topic .product-item > p,
+.topic .review p, .topic .price p, .topic button, #styles .style-item p,
+#customers .name p, #customers .feedback p,#offer-update form .input-group input, #offer-update form button,
+#more-info #contact p, #more-info .col-auto h4, #more-info .col-auto p, #end #copyright {
+    font-family: 'Satoshi', sans-serif;
+}
+
+#navbar h3, #intro h1.row, .topic h4, #styles h4,
+#customers h4, #offer-update h4, #more-info #contact h3{
+    font-family: 'Integral CF', sans-serif;
+}
+    
 @media (max-width: 767px) {
     header #navbar h3{
         font-size: 25.2px;
@@ -664,3 +654,27 @@ main #intro, .topic, #styles, #customers {
 i:hover{
     color: #FF3333;
 }
+
+/* --------------------------------------------------------------- */
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+/* .carousel-cell:before {
+    display: none;
+} */
+
+.flickity-page-dots {
+    bottom: -20px;
+    /* display: none; */
+}
+
+.flickity-prev-next-button {
+    background: none;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------- */
