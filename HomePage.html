@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,15 +13,21 @@
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
+
 <body>
 	<header class="container-fluid p-0 position-fixed bg-white">
-		<div class="alert bg-black text-white alert-dismissible text-center p-0 mb-0 d-flex justify-content-center align-items-center" role="alert">
+		<div class="alert bg-black text-white alert-dismissible text-center p-0 mb-0 d-flex justify-content-center align-items-center"
+			role="alert">
 			Sign up and get 20% off to your first order. <a href="#" class="text-white">Sign Up Now</a>
-			<button class="btn-close btn-close-white d-none d-md-block p-0" aria-label="close" data-bs-dismiss="alert"></button>
+			<button class="btn-close btn-close-white d-none d-md-block p-0" aria-label="close"
+				data-bs-dismiss="alert"></button>
 		</div>
 
-		<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center p-0 m-4 bg-white d-flex" id="navbar">
-			<a class="navbar-brand order-lg-1 order-2 m-0"><h3 class="mb-0">SHOP.CO</h3></a>
+		<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center p-0 m-4 bg-white d-flex"
+			id="navbar">
+			<a class="navbar-brand order-lg-1 order-2 m-0">
+				<h3 class="mb-0">SHOP.CO</h3>
+			</a>
 			<button class="navbar-toggler bg-white order-1" data-bs-toggle="collapse" data-bs-target="#menu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -48,19 +55,30 @@
 					</li>
 				</ul>
 			</div>
-			
-			<form class="d-flex order-lg-3 order-2" id="search-form">
-				<button class="btn d-none d-lg-block" type="submit">
-					<i class="bi bi-search"></i>
-				</button>
-				<input class="form-control d-none d-lg-block ps-5" type="search" placeholder="Search for products..." aria-label="Search">
-			</form>
-			<div class="d-flex order-lg-4 order-3" id="control">
-				<div class="nav-item d-lg-none d-block me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-					<a class="nav-link text-black" href="#">
+
+			<div class="d-flex order-lg-3 order-2" id="control">
+				<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button> -->
+				<button class="nav-item d-lg-none d-block me-2 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+					aria-controls="offcanvasTop" id="search-btn-mobile">
 						<i class="bi bi-search"></i>
-					</a>
+				</button>
+				<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+					aria-labelledby="offcanvasTopLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasTopLabel">Search something</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<form class="d-flex me-2" id="search-form">
+							<button class="btn" type="submit">
+								<i class="bi bi-search"></i>
+							</button>
+							<input class="form-control ps-5" type="search" placeholder="Search for products..."
+								aria-label="Search">
+						</form>
+					</div>
 				</div>
+
 				<div class="nav-item me-2">
 					<a class="nav-link text-black" href="#">
 						<i class="bi bi-cart"></i>
@@ -71,22 +89,6 @@
 						<i class="bi bi-person-circle"></i>
 					</a>
 				</div>
-				<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button> -->
-
-				<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasTopLabel">Search something</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body  d-block d-lg-none">
-					<form class="d-flex" id="search-form">
-						<button class="btn" type="submit">
-							<i class="bi bi-search"></i>
-						</button>
-						<input class="form-control ps-5" type="search" placeholder="Search for products..." aria-label="Search">
-					</form>
-				</div>
-				</div>
 			</div>
 		</nav>
 	</header>
@@ -95,7 +97,8 @@
 		<div class="row d-flex align-items-center pb-0" id="intro">
 			<div class="col-lg-7 p-3">
 				<h1 class="row mb-4">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-				<p class="row mb-4">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+				<p class="row mb-4">Browse through our diverse range of meticulously crafted garments, designed to bring
+					out your individuality and cater to your sense of style.</p>
 				<button class="row btn mb-5">Shop Now</button>
 
 				<div class="row text-left d-flex align-items-center" id="info">
@@ -215,7 +218,7 @@
 							<p>-30%</p>
 						</div>
 					</li>
-				</ul>	
+				</ul>
 			</div>
 			<button class="col-12 text-center m-4">View All</button>
 			<hr class="col-12 m-4">
@@ -240,7 +243,7 @@
 						<div class="d-flex price">
 							<p>$212</p>
 							<p>$232</p>
-							<p>-20%</p>	
+							<p>-20%</p>
 						</div>
 					</li>
 					<li class="col product-item">
@@ -258,7 +261,7 @@
 						<div class="d-flex price">
 							<p>$145</p>
 							<p></p>
-							<p></p>	
+							<p></p>
 						</div>
 					</li>
 					<li class="col product-item">
@@ -345,7 +348,9 @@
 							<i class="bi bi-check-circle-fill"></i>
 						</div>
 						<div class="feedback">
-							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From
+								casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+							</p>
 						</div>
 					</div>
 					<div class="carousel-cell customer-item">
@@ -361,7 +366,9 @@
 							<i class="bi bi-check-circle-fill"></i>
 						</div>
 						<div class="feedback">
-							<p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+							<p>"Finding clothes that align with my personal style used to be a challenge until I
+								discovered Shop.co. The range of options they offer is truly remarkable, catering to a
+								variety of tastes and occasions.”</p>
 						</div>
 					</div>
 					<div class="carousel-cell customer-item">
@@ -377,7 +384,9 @@
 							<i class="bi bi-check-circle-fill"></i>
 						</div>
 						<div class="feedback">
-							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+								stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point
+								with the latest trends.”</p>
 						</div>
 					</div>
 					<div class="carousel-cell customer-item">
@@ -393,7 +402,9 @@
 							<i class="bi bi-check-circle-fill"></i>
 						</div>
 						<div class="feedback">
-							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+							<p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+								stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point
+								with the latest trends.”</p>
 						</div>
 					</div>
 					<div class="carousel-cell customer-item">
@@ -409,7 +420,9 @@
 							<i class="bi bi-check-circle-fill"></i>
 						</div>
 						<div class="feedback">
-							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+							<p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From
+								casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+							</p>
 						</div>
 					</div>
 				</div>
@@ -472,7 +485,7 @@
 			<div class="col-auto m-2" id="copyright">Shop.co &copy; 2000–2023, All Rights Reserved</div>
 			<div class="col-auto d-flex justify-content-between ms-lg-auto ms-0 m-2" id="payment-methods">
 				<div class="d-flex justify-content-center align-items-center pay-item">
-					<img src="img/payments/Visa.png">	
+					<img src="img/payments/Visa.png">
 				</div>
 				<div class="d-flex justify-content-center align-items-center pay-item">
 					<img src="img/payments/Mastercard.png">
@@ -491,4 +504,5 @@
 	</footer>
 	<script src="./js/HomePage.js"></script>
 </body>
+
 </html>
