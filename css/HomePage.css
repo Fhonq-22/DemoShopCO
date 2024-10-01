@@ -651,6 +651,8 @@ main #intro, .topic, #styles, #customers {
 #styles .style-item:hover p {
     color: #FF3333;
     transition: color 0.3s ease;
+    z-index: 22;
+    font-size: 48px;
 }
 
 i:hover{
